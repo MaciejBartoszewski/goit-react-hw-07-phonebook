@@ -25,7 +25,7 @@ export const App = () => {
     if (currentContact) {
       alert(`${name} is already in contacts.`);
     } else {
-      dispatch(addContact(name, number));
+      dispatch(addContact({ nameContact: name, numberContact: number }));
     }
   };
 
