@@ -27,6 +27,9 @@ export const contactsReducer = createReducer(initialState.contacts, {
     state.filter = action.payload;
   },
   [fetchContacts.fulfilled]: (state, action) => {
+    state.items = action.payload;
+  },
+  [fetchContacts.rejected]: (state, action) => {
     console.error(action.error);
   },
 });

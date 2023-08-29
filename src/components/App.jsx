@@ -48,7 +48,7 @@ export const App = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        marginLeft: 51,
+        marginLeft: 50,
         fontSize: 20,
         color: '#010101',
       }}
